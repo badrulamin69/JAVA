@@ -2,13 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package thirdclass;
+package pkg16.pkg01.pkg26;
 
 /**
  *
  * @author Admin
  */
-public class ThirdClass {
+public class Main {
 
     /**
      * @param args the command line arguments
