@@ -10,7 +10,7 @@ public class AugmentedAssignmentOperators {
          
         System.out.println("What is your name?");
         String name = input.nextLine();
-        System.out.println("Welcome to JAVA"+ name);
+        System.out.println("Welcome to JAVA World "+ name);
 
 //        Scanner input = new Scanner(System.in);
 //        int name;
