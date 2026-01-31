@@ -1,20 +1,21 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package stringtype;
 
-/**
- *
- * @author Admin
- */
+import java.util.Scanner;
+
 public class StringType {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+
+        int number = 5;
+        int factorial = 1;
+        int i = 1;
+
+        while (i <= number) {
+            factorial *= i;
+            i++;
+        }
+
+        System.out.println(" factorial " + number + " is " + factorial);
+
     }
-    
 }
