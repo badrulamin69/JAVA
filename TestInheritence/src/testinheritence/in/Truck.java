@@ -1,3 +1,4 @@
+
 package testinheritence.in;
 
 public class Truck extends Vehicle {
