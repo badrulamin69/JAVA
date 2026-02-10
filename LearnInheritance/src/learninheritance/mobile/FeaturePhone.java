@@ -1,13 +1,27 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package learninheritance.mobile;
 
-/**
- *
- * @author Admin
- */
-public class FeaturePhone {
+public class FeaturePhone extends Android{
+    
+    private String button;
+
+    public FeaturePhone(String touchScreen, String brower, String playStore, String setOs) {
+        super(touchScreen, brower, playStore, setOs);
+    }
+
+    public FeaturePhone(String button, String touchScreen, String brower, String playStore, String setOs) {
+        super(touchScreen, brower, playStore, setOs);
+        this.button = button;
+    }
+
+    public String getButton() {
+        return button;
+    }
+
+    public void setButton(String button) {
+        this.button = button;
+    }
+    
+    
     
 }
