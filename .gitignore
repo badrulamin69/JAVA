@@ -71,6 +71,13 @@
 /TestInheritence/build/
 /TestInheritence/dist/
 /BankingSystem/nbproject/private/
+<<<<<<< HEAD
 /CheckBalanceHw/nbproject/private/
 /BankBalanceHw/nbproject/private/
 /BankBalanceHw/build/
+=======
+/BankAccountC/nbproject/private/
+/UserExceptionHandler/nbproject/private/
+/UserExceptionHandler/build/
+/UserExceptionHandler/dist/
+>>>>>>> ba8b33b692dd4b512e14cdae66f46e9ebc17b14b
