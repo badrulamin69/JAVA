@@ -71,9 +71,21 @@
 /TestInheritence/build/
 /TestInheritence/dist/
 /BankingSystem/nbproject/private/
+<<<<<<< HEAD
+/CheckBalanceHw/nbproject/private/
+/BankBalanceHw/nbproject/private/
+/BankBalanceHw/build/
+=======
 /BankAccountC/nbproject/private/
 /UserExceptionHandler/nbproject/private/
 /UserExceptionHandler/build/
 /UserExceptionHandler/dist/
+<<<<<<< HEAD
 /TestAbstructClass/nbproject/private/
 /ATM/nbproject/private/
+=======
+>>>>>>> ba8b33b692dd4b512e14cdae66f46e9ebc17b14b
+/FileHandler/nbproject/private/
+/FileHandler/build/
+/FileHandler/dist/
+>>>>>>> 34fb65c1107f265620d62924bd88211ee83dca20
