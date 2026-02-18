@@ -80,9 +80,19 @@
 /UserExceptionHandler/nbproject/private/
 /UserExceptionHandler/build/
 /UserExceptionHandler/dist/
+<<<<<<< HEAD
+/TestAbstructClass/nbproject/private/
+/ATM/nbproject/private/
+=======
 >>>>>>> ba8b33b692dd4b512e14cdae66f46e9ebc17b14b
 /FileHandler/nbproject/private/
 /FileHandler/build/
 /FileHandler/dist/
+<<<<<<< HEAD
 /ImportantJava/nbproject/private/
 /ImportantJava/build/
+=======
+>>>>>>> 34fb65c1107f265620d62924bd88211ee83dca20
+/veryImportant/nbproject/private/
+/veryImportant/build/
+>>>>>>> 9379a3e139f8baec3eb9d4d42b26f2f6cc51f6eb
