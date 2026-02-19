@@ -4,7 +4,7 @@ package veryimportant;
 import java.util.Scanner;
 
 
-public class VeryImportant {
+public class PlusMinusSum {
 
     
     public static void main(String[] args) {
