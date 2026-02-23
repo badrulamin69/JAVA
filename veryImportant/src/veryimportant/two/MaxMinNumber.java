@@ -10,9 +10,9 @@ public class MaxMinNumber {
         Scanner s = new Scanner(System.in);
         int numbers[] = new int[5];
 
-        for (int index = 0; index < numbers.length; index++) {
+        for (int i = 0; i < numbers.length; i++) {
             System.out.println("Enter Number");
-            numbers[index] = s.nextInt();
+            numbers[i] = s.nextInt();
         }
 
         System.out.println("All Numbers: " + Arrays.toString(numbers));
@@ -22,14 +22,14 @@ public class MaxMinNumber {
         int max = numbers[0];
         int min = numbers[0];
 
-        for (int index = 0; index < numbers.length; index++) {
+        for (int i = 0; i < numbers.length; i++) {
 
-            if (numbers[index] > max) {
-                max = numbers[index];
+            if (numbers[i] > max) {
+                max = numbers[i];
             }
 
-            if (numbers[index] < min) {
-                min = numbers[index];
+            if (numbers[i] < min) {
+                min = numbers[i];
             }
         }
         System.out.println("Max: " + max);
