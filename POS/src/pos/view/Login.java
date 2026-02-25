@@ -37,7 +37,7 @@ public class Login extends javax.swing.JFrame {
         txtUserName = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         txtPassword = new javax.swing.JTextField();
-        btnLogin = new javax.swing.JLabel();
+        btnLogin1 = new javax.swing.JButton();
 
         jLabel2.setText("jLabel2");
 
@@ -78,14 +78,12 @@ public class Login extends javax.swing.JFrame {
 
         jLabel5.setText("Password");
 
-        btnLogin.setBackground(new java.awt.Color(255, 255, 51));
-        btnLogin.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnLogin.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        btnLogin.setText("Login");
-        btnLogin.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 102, 102)));
-        btnLogin.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnLogin1.setBackground(new java.awt.Color(255, 204, 204));
+        btnLogin1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnLogin1.setText("Login");
+        btnLogin1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnLoginMouseClicked(evt);
+                btnLogin1MouseClicked(evt);
             }
         });
 
@@ -108,8 +106,8 @@ public class Login extends javax.swing.JFrame {
                             .addComponent(txtUserName)
                             .addComponent(txtPassword, javax.swing.GroupLayout.DEFAULT_SIZE, 206, Short.MAX_VALUE)))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(135, 135, 135)
-                        .addComponent(btnLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(159, 159, 159)
+                        .addComponent(btnLogin1, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(94, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -125,9 +123,9 @@ public class Login extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(txtPassword, javax.swing.GroupLayout.DEFAULT_SIZE, 47, Short.MAX_VALUE)
                     .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(51, 51, 51)
-                .addComponent(btnLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(40, 40, 40))
+                .addGap(35, 35, 35)
+                .addComponent(btnLogin1, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(42, 42, 42))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -154,23 +152,22 @@ public class Login extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtUserNameActionPerformed
 
-    private void btnLoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLoginMouseClicked
+    private void btnLogin1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLogin1MouseClicked
         // TODO add your handling code here:
-        
+
         String userName = txtUserName.getText().trim();
         String password = txtPassword.getText().trim();
-        
-        if(userName.equalsIgnoreCase("java") && password.equals("1234")){
-            
+
+        if (userName.equalsIgnoreCase("java") && password.equals("1234")) {
+
             DashBoard db = new DashBoard();
             db.setVisible(true);
             this.dispose();
-            
+
         } else {
             JOptionPane.showMessageDialog(rootPane, "Username or Password is incorrect");
         }
-        
-    }//GEN-LAST:event_btnLoginMouseClicked
+    }//GEN-LAST:event_btnLogin1MouseClicked
 
     /**
      * @param args the command line arguments
@@ -208,7 +205,7 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel btnLogin;
+    private javax.swing.JButton btnLogin1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
