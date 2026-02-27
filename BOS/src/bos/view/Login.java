@@ -5,6 +5,7 @@
 package bos.view;
 
 import bos.dao.UserDao;
+import bos.model.User;
 
 /**
  *
@@ -12,8 +13,9 @@ import bos.dao.UserDao;
  */
 public class Login extends javax.swing.JFrame {
     
-    use
-    UserDao
+    UserDao ud ;
+    User u ;
+    
 
     /**
      * Creates new form Login
@@ -115,6 +117,7 @@ public class Login extends javax.swing.JFrame {
 
     private void saveMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_saveMouseClicked
         // TODO add your handling code here:
+        ud
     }//GEN-LAST:event_saveMouseClicked
 
     /**
