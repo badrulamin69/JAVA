@@ -1,5 +1,5 @@
 
-package veryimportant;
+package Numbers;
 
 import java.util.Scanner;
 

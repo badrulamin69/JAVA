@@ -1,4 +1,4 @@
-package veryimportant.two;
+package Numbers;
 
 import java.util.Arrays;
 import java.util.Scanner;

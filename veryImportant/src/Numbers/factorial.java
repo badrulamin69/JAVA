@@ -1,4 +1,4 @@
-package veryimportant;
+package Numbers;
 
 public class factorial {
 
