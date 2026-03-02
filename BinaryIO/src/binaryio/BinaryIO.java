@@ -24,7 +24,6 @@ public class BinaryIO {
         }
         
         
-        
         try {
             FileInputStream input = new FileInputStream("F:\\JAVA Git\\JAVA\\BinaryIO.dat");
             
