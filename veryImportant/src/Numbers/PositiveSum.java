@@ -4,7 +4,7 @@ package Numbers;
 import java.util.Scanner;
 
 
-public class PlusMinusSum {
+public class PositiveSum {
 
     
     public static void main(String[] args) {

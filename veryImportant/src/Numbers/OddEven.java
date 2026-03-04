@@ -2,7 +2,7 @@ package Numbers;
 
 import java.util.Scanner;
 
-public class PrimeNumber {
+public class OddEven {
 
     public static void main(String[] args) {
 
@@ -17,3 +17,4 @@ public class PrimeNumber {
         }
     }
 }
+
