@@ -1,11 +1,14 @@
 
 package bos.service;
 
+import java.util.List;
+
 
 public interface DaoService<E>{
     
     void save(E e);
     void update(E e);
-    E findAll(int id);
+    List<E>findAll();
     void delete(int id);
+    
 }

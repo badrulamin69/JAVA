@@ -1,59 +1,20 @@
-
 package Numbers;
 
 import java.util.Scanner;
 
-
 public class OddEven {
-    
+
     public static void main(String[] args) {
-        
-        Scanner input = new Scanner(System.in);
-        System.out.println("Enter number 1");
-        int nu1 = input.nextInt();
-        
-        System.out.println("Enter number 2");
-        int nu2 = input.nextInt();
-        
-        System.out.println("Enter + - / * ");
-        String op = input.next();
-        
-        if (op.equals("+")){
-            System.out.println(nu1 + nu2);
-        } else if (op.equals("-")){
-            
-            System.out.println(nu1 - nu2);
-        } else if (op.equals("*")){
-        
-            System.out.println(nu1 * nu2);
-        } else if (op.equals("/")){
-        
-            System.out.println(nu1 / nu2);
+
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter number");
+        int number = s.nextInt();
+
+        if (number % 2 == 0) {
+            System.out.println("Prime");
+        } else {
+            System.out.println("Not Prime");
         }
-        
-   }
+    }
 }
 
-//        System.out.println("Enter");
-        
-        
-        
-        
-//        Scanner input = new Scanner(System.in);
-//        System.out.println("Enter number");
-//        
-//        int number = 
-//        
-//        if (number % 2 = 0 ) {
-//            System.out.println("Even");
-//        } else {
-//            System.out.println("Odd");
-//        }
-//    }
-//    
-////}
-//
-//        
-//    }
-//    
-//}
