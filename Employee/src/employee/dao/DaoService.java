@@ -1,13 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
- */
+
 package employee.dao;
 
-/**
- *
- * @author Admin
- */
-public interface DaoService {
+import java.awt.List;
+
+public interface DaoService<E> {
+    
+    void save(E e);
+    void update(E e);
+    List<E>findAll();
+    void delete (int id);
     
 }
