@@ -7,25 +7,24 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import pos.model.User;
+import pos.model.Catagory;
 import pos.service.DaoService;
 import pos.util.DbUtil;
 
-public class UserDao implements DaoService<User> {
+public class CatagoryDao implements DaoService<Catagory> {
 
     DbUtil util = new DbUtil();
     PreparedStatement ps;
     ResultSet rs;
     String sql = null;
 
-    public void save(User user) {
-
-        sql = "insert into user (userName, password) values(?,?)";
+    @Override
+    public void save(Catagory e) {
+        sql = "insert into catagory (name) values(?)";
         try {
             ps = util.getCon().prepareStatement(sql);
 
-            ps.setString(1, user.getUserName());
-            ps.setString(2, user.getPassword());
+            ps.setString(1, e.getName());
 
             ps.executeUpdate();
 
@@ -35,42 +34,40 @@ public class UserDao implements DaoService<User> {
             System.out.println("Data Save ");
 
         } catch (SQLException ex) {
-            Logger.getLogger(UserDao.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(CatagoryDao.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
     @Override
-    public List<User> showAll() {
-        sql = "select * from user ";
-        List<User> list = new ArrayList<>();
+    public List<Catagory> showAll() {
+        sql = "select * from catagory ";
+        List<Catagory> list = new ArrayList<>();
         try {
             ps = util.getCon().prepareStatement(sql);
 
             rs = ps.executeQuery();
             while (rs.next()) {
-                User user = new User();
+                Catagory user = new Catagory();
                 user.setId(rs.getInt("id"));
-                user.setUserName(rs.getString("userName"));
-                user.setPassword(rs.getString("password"));
+                user.setName(rs.getString("name"));
 
                 list.add(user);
             }
 
         } catch (SQLException ex) {
-            Logger.getLogger(UserDao.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(CatagoryDao.class.getName()).log(Level.SEVERE, null, ex);
         }
         return list;
     }
 
     @Override
-    public void update(User e) {
-        sql = "update user set userName = ?, password = ? where id = ? ";
+    public void update(Catagory e) {
+        sql = "update catagory set name = ? where id = ? ";
         try {
             ps = util.getCon().prepareStatement(sql);
 
-            ps.setString(1, e.getUserName());
-            ps.setString(2, e.getPassword());
-            ps.setInt(3, e.getId());
+            ps.setString(1, e.getName());
+            ps.setInt(2, e.getId());
 
             ps.executeUpdate();
 
@@ -78,15 +75,13 @@ public class UserDao implements DaoService<User> {
             util.getCon().close();
 
         } catch (SQLException ex) {
-            Logger.getLogger(UserDao.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(CatagoryDao.class.getName()).log(Level.SEVERE, null, ex);
         }
-
     }
 
     @Override
     public void delete(int id) {
-
-        sql = "delete from user where id = ?";
+        sql = "delete from catagory where id = ?";
         try {
             ps = util.getCon().prepareStatement(sql);
 
@@ -98,8 +93,8 @@ public class UserDao implements DaoService<User> {
             util.getCon().close();
 
         } catch (SQLException ex) {
-            Logger.getLogger(UserDao.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(CatagoryDao.class.getName()).log(Level.SEVERE, null, ex);
         }
-
     }
+
 }
