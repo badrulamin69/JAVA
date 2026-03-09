@@ -1,5 +1,7 @@
 package testmultithreading;
 
+import model.PrintChar;
+
 public class TestMultithreading {
 
     public static void main(String[] args) {

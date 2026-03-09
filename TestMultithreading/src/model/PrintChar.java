@@ -1,4 +1,4 @@
-package testmultithreading;
+package model;
 
 public class PrintChar implements Runnable {
 
