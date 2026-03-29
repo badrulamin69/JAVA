@@ -1,7 +1,7 @@
 
 package twodiamensionalarray;
 
-import java.awt.BorderLayout;
+//import java.awt.BorderLayout;
 import java.util.Arrays;
 
 
