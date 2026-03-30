@@ -15,8 +15,8 @@ public class PrintChar implements Runnable {
 
     @Override
     public void run() {
-        for (int i = 0; i < times; i++) {
-            System.out.println(chatToPrint + "");
+        for(int i = 0; i < times; i++){
+            System.out.println(chatToPrint + " ");
         }
     }
 

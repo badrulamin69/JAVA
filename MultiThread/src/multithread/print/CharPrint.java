@@ -1,23 +1,24 @@
-package multithreading.print;
+package multithread.print;
 
-public class PrintChar implements Runnable {
+public abstract class CharPrint implements Runnable {
 
     private char charToPrint;
     private int times;
 
-    public PrintChar() {
+    public CharPrint() {
     }
 
-    public PrintChar(char charToPrint, int times) {
+    public CharPrint(char charToPrint, int times) {
         this.charToPrint = charToPrint;
         this.times = times;
     }
 
     @Override
     public void run() {
-        for(int i = 0; i < times; i++){
+        for (int i = 0; i < times; i++) {
             System.out.println(charToPrint + " ");
         }
+
     }
 
 }
