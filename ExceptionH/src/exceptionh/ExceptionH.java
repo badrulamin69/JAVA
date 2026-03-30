@@ -1,26 +1,21 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package exceptionh;
 
-/**
- *
- * @author Admin
- */
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
 public class ExceptionH {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        
+
+        File f = new File("Tanvir.txt");
         try {
-            int j = 10/0;
-        } catch (Exception e) {
-            System.out.println("Invalid");
+            Scanner s = new Scanner(f);
+            while (s.hasNext()) {
+                System.out.println(s.next());
+            }
+        } catch (FileNotFoundException ex) {
+            System.out.println(ex);
         }
-       
     }
-    
 }
