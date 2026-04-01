@@ -14,8 +14,6 @@ public class AdvanceJavaEVD {
     public static void main(String[] args) {
 
     }
-    
-    
 
     public static Connection getCon() {
 
@@ -60,7 +58,10 @@ public class AdvanceJavaEVD {
             rs = ps.executeQuery();
 
             while (rs.next()) {
-                String student = rs.getInt("id") + " " + rs.getString("name") + " " + rs.getString("email") + " " + rs.getFloat("fee");
+                String student = rs.getInt("id") 
+                        + " " + rs.getString("name") 
+                        + " " + rs.getString("email") 
+                        + " " + rs.getFloat("fee");
 
                 System.out.println(student);
             }
