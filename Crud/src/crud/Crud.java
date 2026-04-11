@@ -19,13 +19,12 @@ public class Crud {
         String selectSql = "select * from student";
         String deleteSql = "delete from student where id = ?";
         String updateSql = "update student set name =?, email=?, fee=? where id=?";
-        
+
         createStudent("Badrul", "badrul@gmail.com", 2000);
         createStudent("Tanvir", "tanvir@gmail.com", 3000);
         createStudent("Emon", "emon@gmail.com", 4000);
-        
+
         showAllStudent();
-        
 
     }
 
@@ -84,13 +83,59 @@ public class Crud {
 
                 System.out.println(student);
             }
-            
+
             rs.close();
             ps.close();
             getCon().close();
 
         } catch (SQLException ex) {
             Logger.getLogger(C rud.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+    }
+
+    public static void deleteStudent(int id) {
+        String deleteSql = "delete from student where id = ?";
+
+        try {
+            ps = getCon().prepareStatement(deleteSql);
+            ps.setInt(1, id);
+
+            int status = ps.executeUpdate();
+
+            if (status > 0) {
+                System.out.println("Student ID " + id + " Deleted");
+            } else {
+                System.err.println("Student Data Not Deleted");
+            }
+
+            ps.close();
+            getCon().close();
+
+        } catch (SQLException ex) {
+
+            System.err.println("Student Data Not Deleted");
+        }
+
+    }
+
+    public static void updateStudent(String name, String email, float fee, int id) {
+        String updateSql = "update student set name =?, email = ?, fee=? where id=?";
+        try {
+            ps = getCon().prepareStatement(updateSql);
+            ps.setString(1, name);
+            ps.setString(2, email);
+            ps.setFloat(3, fee);
+            ps.setInt(4, id);
+
+            ps.executeUpdate();
+            ps.close();
+            getCon().close();
+            System.out.println("Data Updated");
+
+        } catch (SQLException ex) {
+
+            System.err.println("Data Not Updated");
         }
 
     }
