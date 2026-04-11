@@ -90,7 +90,7 @@ public class Crud {
             getCon().close();
 
         } catch (SQLException ex) {
-            Logger.getLogger(Crud.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(C rud.class.getName()).log(Level.SEVERE, null, ex);
         }
 
     }
