@@ -166,8 +166,17 @@
 /CrudSystem/nbproject/private/
 /CrudEmp/nbproject/private/
 /CrudEmp/build/
+<<<<<<< HEAD
 /crudApplication/nbproject/private/
 /crudApplication/build/
 /EmpJsp/nbproject/private/
 /EmpJsp/build/
 /EmpJsp/dist/
+=======
+/advanceJavaExam/nbproject/private/
+/advanceJavaExam/build/
+/CrudExam/nbproject/private/
+/CrudExam/build/
+/WebApplication1/nbproject/private/
+/WebApplication1/build/
+>>>>>>> 46f79e2cff46bf1ebb1a4d3679a3987dbeafaebd
